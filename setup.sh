@@ -10,11 +10,11 @@ if [[ ${CI_ENVIRONMENT} == "SEMAPHORE_CI" ]]; then
 			libgc1c2 libopts25-dev bash gnupg
 fi
 
-git clone https://github.com/idkwhoiam322/AnyKernel3.git -b op5 --depth=1 anykernel3
+git clone https://github.com/Danish1999/AnyKernel3 -b Vortechx --depth=1 anykernel3
 
 if [[ ${COMPILER} == "GCC" ]]; then
-	git clone https://github.com/arter97/arm64-gcc.git -b master --depth=1 gcc
-	git clone https://github.com/arter97/arm32-gcc.git -b master --depth=1 gcc32
+	git clone https://github.com/kdrag0n/aarch64-elf-gcc.git --depth=1 gcc
+	git clone https://github.com/kdrag0n/arm-eabi-gcc --depth=1 gcc32
 else
 	git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9 --depth=1 gcc
 	git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9 --depth=1 gcc32

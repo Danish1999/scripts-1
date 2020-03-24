@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Export custom User and Host
-KBUILD_BUILD_USER=idkwhoiam322
-KBUILD_BUILD_HOST=raphielgang_ci
+KBUILD_BUILD_USER=DSP170099
+KBUILD_BUILD_HOST=vortechx_ci
 export KBUILD_BUILD_USER KBUILD_BUILD_HOST
 
 # Get CI environment
@@ -34,8 +34,8 @@ export CUR_BRANCH
 # Release type
 if [[ ${KERNEL_BUILD_TYPE} == *"BETA"* ]]; then
 	KERNEL_BUILD_TYPE="beta"
-	VERA="Hentai"
-	MY_DEVICE="op5"
+	VERA="Quarantine"
+	MY_DEVICE="X00T"
 	MIN_HEAD=$(git rev-parse HEAD)
 	VERB="$(date +%Y%m%d)-$(echo ${MIN_HEAD:0:8})"
 	VERSION="${VERA}-${VERB}-r${CUR_BUILD_NUM}"
@@ -52,5 +52,5 @@ export ZIPNAME KERNEL_BUILD_TYPE
 export OUT_IMAGE_DIR="${PROJECT_DIR}/out/arch/arm64/boot/Image.gz-dtb"
 
 #export defconfig
-DEFCONFIG="weeb_defconfig"
+DEFCONFIG="X00T_defconfig"
 export DEFCONFIG

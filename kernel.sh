@@ -13,9 +13,9 @@ fi
 # Telegram Post to CI channel
 if [[ "$@" =~ "post"* ]]; then
 curl -s -X POST https://api.telegram.org/bot${BOT_API_KEY}/sendMessage \
--d text="Kernel: <code>Weeb Kernel</code>
+-d text="Kernel: <code>Vortechx Kernel</code>
 Type: <code>${KERNEL_BUILD_TYPE^^}</code>
-Device: <code>OnePlus 5/T</code>
+Device: <code>Asus Zenfone Max Pro M1</code>
 Compiler: <code>${COMPILER}</code>
 Branch: <code>$(git rev-parse --abbrev-ref HEAD)</code>
 Build Number: <code>r${CUR_BUILD_NUM}</code>

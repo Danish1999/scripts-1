@@ -52,5 +52,5 @@ export ZIPNAME KERNEL_BUILD_TYPE
 export OUT_IMAGE_DIR="${PROJECT_DIR}/out/arch/arm64/boot/Image.gz-dtb"
 
 #export defconfig
-DEFCONFIG="X00T_defconfig"
+DEFCONFIG="X00TD_defconfig"
 export DEFCONFIG
